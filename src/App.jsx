@@ -48,7 +48,7 @@ export default function App() {
           note={DATA.contactNote}
           onOpen={setActiveItem}
         />
-        <MessageBoard messages={DATA.messages} />
+        "<MessageBoard messages={DATA.messages} />
 
         <div className="h-24" />
       </main>
@@ -110,7 +110,7 @@ export default function App() {
                 </p>
               )}
               {activeItem.data.tags && (
-                <div className="flex flex-wrap gap-2 mt-4">
+                <div className="flex flex-wrap gap-2 mt-3">
                   {activeItem.data.tags.map((tag, i) => (
                     <span
                       key={i}
